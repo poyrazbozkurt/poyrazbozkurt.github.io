@@ -1,0 +1,120 @@
+% Curriculum vitae of Poyraz Bozkurt.
+% Compile with: pdflatex cv_poyraz.tex
+\documentclass[10pt,letterpaper]{article}
+\usepackage[left=1in,right=1.1in,top=0.95in,bottom=0.9in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Two-column layout: bold uppercase label on the left, content on the right.
+\newlength{\labelw}\setlength{\labelw}{1.35in}
+\newlength{\gapw}\setlength{\gapw}{0.1in}
+\newlength{\bodyw}\setlength{\bodyw}{\dimexpr\textwidth-\labelw-\gapw\relax}
+\newcommand{\cvsection}[2]{%
+  \par\vspace{16pt}%
+  \noindent\begin{minipage}[t]{\labelw}\raggedright\textbf{#1}\end{minipage}%
+  \hspace{\gapw}%
+  \begin{minipage}[t]{\bodyw}#2\end{minipage}\par}
+\newcommand{\entry}[2]{{\itshape #1}\hfill #2}
+\newcommand{\entrygap}{\par\vspace{12pt}}
+\setlist[itemize]{leftmargin=1.6em,topsep=3pt,itemsep=3pt,parsep=0pt,partopsep=0pt}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries POYRAZ BOZKURT}\\[4pt]
+\rule{\textwidth}{0.5pt}\\[8pt]
+Fuqua School of Business, Duke University\\
+100 Fuqua Drive, Durham, NC 27708\\
+Tel: +1 765 409 2811, Email: poyraz.bozkurt@duke.edu\\
+Web: \url{https://poyrazbozkurt.github.io}\\
+LinkedIn: \url{https://www.linkedin.com/in/poyrazbozkurt}
+\end{center}
+
+\vspace{6pt}
+
+\cvsection{EDUCATION}{%
+\entry{Ph.D. Candidate in Operations Management}{2028 (expected)}\\
+\textbf{Fuqua School of Business, Duke University}, Durham, NC\\
+Advisors: N. Bora Keskin and Jing-Sheng Song
+\entrygap
+\entry{M.S. in Industrial Engineering}{May 2023}\\
+\textbf{Purdue University}, West Lafayette, IN\\
+GPA: 4.00 / 4.00
+}
+
+\cvsection{RESEARCH\\INTERESTS}{%
+Dynamic pricing, revenue management, statistical learning, machine learning, applied probability, platform operations.
+}
+
+\cvsection{WORKING\\PAPERS}{%
+\textbf{When the Regular Price Becomes an Anchor: Markdown Pricing with Strategic Customers and Reference Effects}\\
+with N. Bora Keskin and Jing-Sheng Song
+\begin{itemize}
+  \item INFORMS Annual Meeting, San Francisco, CA, November 2026 (session ``Learning and Information Design in Pricing'')
+  \item Behavioral Operations Conference, Emerging Research Workshop, AZ, May 2026
+\end{itemize}
+\vspace{6pt}
+\textbf{Ask the Assistant or Search the Page? Unstructured Information and AI Adoption}\\
+with N. Bora Keskin and Jing-Sheng Song
+\begin{itemize}
+  \item POMS Annual Conference, Orlando, FL, April 2027 (scheduled; invited session ``AI and Platform Operations'')
+\end{itemize}
+}
+
+\cvsection{OTHER\\PRESENTATIONS}{%
+``Adapting to a Drifting Environment'' (with Harsha Honnappa), INFORMS Annual Meeting, Indianapolis, IN, 2022
+}
+
+\cvsection{TEACHING\\EXPERIENCE}{%
+\entry{Instructor, Ph.D. Math Camp}{Summer 2025, 2026}\\
+Fuqua School of Business, Duke University
+\begin{itemize}
+  \item Designed and taught foundational mathematics modules, including linear algebra, real analysis, and optimization, to incoming doctoral students.
+  \item Teaching evaluations: 4.75 / 5.0 (2026), 4.7 / 5.0 (2025)
+\end{itemize}
+\entrygap
+\entry{Graduate Teaching Assistant}{2024 -- 2025}\\
+Fuqua School of Business, Duke University\\
+OPERATNS 823 / 823E: Operations Strategy (Prof.\ Robert Swinney), Fall 2024, Winter 2025
+\entrygap
+\entry{Graduate Teaching Assistant}{2021}\\
+School of Management, Purdue University\\
+MGMT 560: Advanced Manufacturing Management (Prof.\ J.\ George Shanthikumar), Fall 2021
+}
+
+\cvsection{WORK\\EXPERIENCE}{%
+\entry{Summer Research Intern, Artificial Intelligence Department}{June -- August 2023}\\
+\textbf{Fidelity Investments}, Boston, MA
+\begin{itemize}
+  \item Developed BALANS, a bandit-based adaptive large neighborhood search solver.
+  \item Designed ML-guided heuristics for combinatorial optimization problems.
+\end{itemize}
+}
+
+\cvsection{SERVICE AND\\ACTIVITIES}{%
+Ad-hoc Reviewer: \textit{Operations Research}\\
+Session Co-Chair (with N. Bora Keskin), ``AI and Platform Operations,'' POMS Annual Conference, 2027\\
+Ph.D. Program Liaison, Fuqua School of Business, Duke University (2025 -- present)\\
+Organization Member, Fuqua Ph.D. Student Organization (STAGE) (2024 -- 2025)
+}
+
+\cvsection{HONORS AND\\AWARDS}{%
+Duke Doctoral Fellowship (2023 -- 2028)\\
+Ranked in the top 0.1\% among over 2 million students in the Turkish national university entrance exam (2014)
+}
+
+\cvsection{SKILLS}{%
+\textit{Languages}\\
+English (full professional proficiency), Turkish (native), German (limited working proficiency)
+\entrygap
+\textit{Programming and Software}\\
+Python, R, Julia, MATLAB, SQL, GAMS
+}
+
+\cvsection{PROFESSIONAL\\SOCIETIES}{%
+INFORMS, POMS
+}
+
+\end{document}
